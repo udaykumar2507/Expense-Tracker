@@ -1,0 +1,189 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content area styling */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Navbar Styling */
+/* Navbar Styling */
+
+.navbar {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 30px;
+  /* Reduce padding to reduce height */
+  border-bottom: 2px solid #2980b9;
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  display: inline-block;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  /* Align items to the right */
+  align-items: center;
+  width: 100%;
+  /* Ensure navbar takes full width */
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-left: 20px;
+  /* Add spacing between navbar items */
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  /* Uppercase for a clean look */
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+/* Form Container */
+.form-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Expense List Styling */
+/* Container for the entire ExpenseList */
+.expense-list-container {
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  /* Ensures the table doesn't stretch too wide */
+  margin-left: auto;
+  /* Automatically center the container horizontally */
+  margin-right: auto;
+  /* Automatically center the container horizontally */
+}
+
+/* Title of the expense list */
+.expense-list-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Styling the table */
+.expense-table {
+  width: 100%;
+  /* Ensure the table takes full width */
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+/* Table headers */
+.expense-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Table rows */
+.expense-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling for hover effect on table rows */
+.expense-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Delete button styling */
+.expense-table .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  padding: 5px 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .expense-table {
+    font-size: 0.9rem;
+  }
+}
